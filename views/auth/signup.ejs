@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-sm bg-primary ">
+
+        <div class="container-fluid justify-content-end ">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="/getLogin">Login</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="row d-flex justify-content-center mt-5">
+        <div class="col-4">
+            <form action="/postSignup" method="post">
+                <div class="mb-3 mt-3">
+                    <label for="fullname" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Enter Full Name" name="fullname">
+                </div>
+                <div class="mb-3 mt-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter Password" name="password">
+                </div>
+                <div class="mb-3">
+                    <label for="cpwd" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="cpwd" placeholder="Re-enter Password" name="confirmPassword">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

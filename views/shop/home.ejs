@@ -1,0 +1,36 @@
+<%- include('../includes/head.ejs') %>
+    <div class="row py-3  px-3 row-cols-4 gy-5">
+        <% for (let prod of products ) { %>
+        <div class="col">
+            <div class="grid" style="height: 300px; width:300px ;">
+                <article class="card product-item">
+                    <header class="card__header text-center my-2">
+                        <h4 class="product__title">
+                            <%= prod.title %>
+                        </h4>
+                    </header>
+                    <div class="card__image border-bottom border-top d-flex justify-content-center">
+                        <img src="<%= prod.imageUrl %>" alt="<Book" width="180px" height="160px">
+                    </div>
+                    <div class="card__content text-center">
+                        <h5 class="product__price">
+                            ₹<%= prod.price %>
+                        </h5>
+                        <p class="product__description text-center">
+                            <%= prod.description %>
+                        </p>
+                    </div>
+                    <div class="card__actions text-end my-2 me-2">
+                        <a href="#" class="btn btn-outline-success btn-sm">Buy</a>
+                        <a href="#" class="btn btn-outline-success btn-sm">Details</a>
+                    </div>
+                </article>
+            </div>      
+        </div>
+        <% } %>
+        
+    </div>
+</div>
+
+</body>
+</html>
